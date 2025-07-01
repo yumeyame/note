@@ -6,7 +6,7 @@ IDE（Integrated Development Environment）集成开发环境，将开发的大�
 4. 项目管理
 
 ## CMakeLists.txt
-命令：
+## 命令：
 1. cmake_minimum_required: cmake最低版本（非必须，不加会警报）
 cmake_minimum_required（VERSION 3.0）
 2. project:定义项目（名称，版本，描述，web主页，支持语言），
@@ -17,6 +17,17 @@ project(<PROJECT-NAME>
        [LANGUAGES <language-name>...])
 
 3. add_executable(可执行程序， 源文件)： 生成可执行程序
+
+4. set(变量 源文件): 将多个源文件存储为变量,类似宏定义
+set(A[2] a.c b.c c.c)
+set(A a.c;b.c;c.c)
+变量和分割各有两种写法
+调用A用${A}
+
+5. 指定C++标准
+自带宏CMAKE_CXX_STANDARD
+6. 制定可执行程序输出路径
+自带宏EXECUTABLE_OUTPUT_PATH, 建议用绝对路径
 
 ## CMake指令
 cmake CMakeLists的地址：执行cmake

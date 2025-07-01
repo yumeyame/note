@@ -28,7 +28,11 @@ set(A a.c;b.c;c.c)
 自带宏CMAKE_CXX_STANDARD
 6. 制定可执行程序输出路径
 自带宏EXECUTABLE_OUTPUT_PATH, 建议用绝对路径
+7. aux_source_directory(< dir > < variable >)将dir所有的源文件存到variable中
+8. file(GLOB/GLOB_RECURSE 变量名 要搜索的文件路径和文件类型)
 
 ## CMake指令
-cmake CMakeLists的地址：执行cmake
+1. cmake CMakeLists的地址：执行cmake
 	（地址在同一级“.",上一级”.."）
+2. aux_source_directory(< dir > < variable >)将dir所有的源文件存到variable中
+3. 

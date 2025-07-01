@@ -17,3 +17,7 @@ project(<PROJECT-NAME>
        [LANGUAGES <language-name>...])
 
 3. add_executable(可执行程序， 源文件)： 生成可执行程序
+
+## CMake指令
+cmake CMakeLists的地址：执行cmake
+	（地址在同一级“.",上一级”.."）

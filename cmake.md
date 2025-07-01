@@ -30,6 +30,7 @@ set(A a.c;b.c;c.c)
 自带宏EXECUTABLE_OUTPUT_PATH, 建议用绝对路径
 7. aux_source_directory(< dir > < variable >)将dir所有的源文件存到variable中
 8. file(GLOB/GLOB_RECURSE 变量名 要搜索的文件路径和文件类型)
+9. include_directories(headpath)添加头文件
 
 ## CMake指令
 1. cmake CMakeLists的地址：执行cmake
